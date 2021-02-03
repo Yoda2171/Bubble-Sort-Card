@@ -1,0 +1,47 @@
+body{
+    background-color: green;
+    box-sizing: border-box;
+}
+.container2{
+
+    display: block;
+    display: row;
+}  
+
+.card{
+    background: white;
+    text-align: center;
+
+    display: inline-block;
+    display: row;
+
+    
+    margin: 3px;
+    height: 80px;
+    width: 90px;
+    font-size: 30px;
+    padding: 20px;
+    padding-top: 60px;
+    border: 1px solid block;
+    border-radius: 5px;
+    position: relative;
+}
+:before{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+}
+
+:after{
+    position: absolute;
+    bottom: 20px;   
+    right: 20px;
+    font-size: 30px;
+}
+
+
+.pica::before, .pica::after{ content: '\2660';}
+.diamante:before, .diamante:after{ content: '\25CA'; color: red ;}
+.trebol:before, .trebol:after{ content: '\2663';}
+.corazon:before, .corazon:after{ content: '\2665'; color: red;}
